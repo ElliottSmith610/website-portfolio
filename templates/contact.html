@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+<div class="container">
+    <h1 class="text-center">Contact Me</h1>
+
+    {% if message_success %}
+        <h2 class="text-center form">Message sent!</h2>
+    {% else %}
+    <div class="form">
+    {{ wtf.quick_form(form, novalidate=True, button_map={'submit': 'primary'}) }}
+    </div>
+    <!-- <form method="POST">
+        <span>{{ form.hidden_tag() }}</span>
+        <span>{{ form.csrf_token }}</span>
+        <span>{{ form.name.label }} {{ form.name }}</span>
+        <span>{{ form.email.label }} {{ form.email }}</span>
+        <span>{{ form.msg.label }} {{ form.msg }}</span>
+        <span>{{ form.submit }}</span>
+    </form> -->
+    {% endif %}
+</div>
+
+{% include 'footer.html' %}

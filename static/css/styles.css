@@ -1,0 +1,74 @@
+body {
+    background: #C0DEFF;
+    background: linear-gradient(to right, rgba(150, 234, 255, 0.151), rgba(229, 122, 233, 0.199));
+    /* background-image: linear-gradient(to right, rgba(150, 234, 255, 0.151), rgba(229, 122, 233, 0.199)),
+                      url(../images/fence.jpg); */
+    background-size: cover;
+}
+.title-nav {
+    padding-left: 1.2rem;
+}
+.navbar {
+    padding-bottom: 5%;
+}
+h1 {
+    font-family: "DM Mono",monospace;
+    font-size: 4.5rem;
+    line-height: 7rem;
+    color: black;
+    padding: 7%
+
+}
+p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.2rem;
+    /* padding-top: 5%; */
+}
+/* .spacer {
+    margin: 7%, auto;
+} */
+hr {
+    border-top: 5px dotted grey;
+    width: 20%;
+    margin: auto;
+    margin-top: 7%;
+}
+/* .contact {
+    width: 30%;
+} */
+.form {
+    margin: 4%;
+}
+.container {
+    /* background-color: bisque; */
+    width:50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+#links {
+    position: relative;
+    margin-top: 0;
+}
+
+#links li {
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.profile-picture {
+    border-radius: 100%;
+    width: 350px;
+
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.body {
+    width: 70%;
+    margin: auto;
+}
+.form-group {
+    padding-bottom: 3%;
+}

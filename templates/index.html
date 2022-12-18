@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+
+<section id="main-content" class="container-fluid">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm">
+        <h1 class="">Hello,<br>I'm Elliott</h1>
+        </div>
+        <div class="col-sm">
+            <img class="profile-picture" src="{{ url_for('static', filename='images/picture.png') }}" alt="profile picture">
+        </div>
+    </div>
+        <div class="body">
+            {% for line in bio %}
+            <p class="text-center">{{ line.decode('latin1') }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
